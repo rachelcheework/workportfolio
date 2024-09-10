@@ -1,0 +1,179 @@
+/* colours:
+blue -> rgb(20, 91, 205)
+black -> rgb(57, 57, 57)
+white -> rgb(250, 250, 250) */
+
+body{
+  /* background-color: rgb(14, 14, 14); */
+  /* color: rgb(0, 128, 0); */
+  background-color: rgb(250, 250, 250);
+  color: rgb(20, 91, 205);
+}
+
+/* navbar styling */
+.navbar-custom{
+  background-color:rgb(250, 250, 250);
+  height : 80px;
+}
+
+.navbar-custom .navbar-collapse.show {
+  background-color: rgb(250, 250, 250);
+  transition: none;
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+  color:rgb(20, 91, 205); /* default font color */
+  font-size: larger;
+  font-weight: 500;
+  margin: 20px;
+}
+
+.navbar-brand:hover {
+  color: rgb(57, 57, 57);
+  transition: color 0.3s ease; /* transition for color change */
+}
+
+.navbar-link:hover {
+  color: rgb(57, 57, 57);
+  transition: color 0.3s ease; /* transition for color change */
+  padding-top: 0px;
+}
+
+.navbar-nav .navbar-link.active { /* specificity is very important or it won't work */
+  color: rgb(57, 57, 57);
+}
+
+
+/* general text styling */
+.page-title {        /* NOTE: all titles are initially automatically aligned left */
+  font-size: 30px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center; /* aligns title in center (up-down) */
+}
+
+p {
+  color: rgb(57, 57, 57);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* container styling */
+.container-standard{
+  display: flex; /* makes container a flex container */
+  flex-direction: column; /* stacks items vertically */
+  padding-top: 20px;
+}
+
+.title-box {
+  height: 48px; /* ensures the container in both columns in About Page start from the same height */
+}
+
+/* homepage styling */
+.home-container{
+  min-height: calc(100vh - 80px); /* important for centering homepage; sets the minimum height of the container to the viewport height minus the navbar height, ensuring the content fills the available space. */
+  align-items: center; /* centers items (up down); display must be flex - refer to .container-standard class on top */
+  justify-content: center; /* centers items (left right) */
+  padding: 0; /* overwrites padding-top: 80px */
+  
+}
+
+.resume-btn {
+  background-color: rgb(20, 91, 205);
+  border: 0;
+  outline: 2.5px solid;
+  border-color:  rgb(20, 91, 205); /* putting border color here instead of hover because idw it to transition... looks weird when it does */
+}
+
+.resume-btn:hover{
+  background-color: rgb(250, 250, 250);
+  color:  rgb(20, 91, 205);
+  /* outline: 2.5px solid;
+  border-color:  rgb(20, 91, 205); */
+  box-shadow: 5px 5px 3px rgb(57, 57, 57);
+  transition: all 0.3s ease; 
+}
+
+/* about page styling */
+.about-title {
+  height: 45px; /* helps to align About Me and Skills horizontally */
+}
+.desc-list{
+  width: 80%;
+  border: 1px solid rgb(57, 57, 57);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px rgb(57 57 57/40%);
+  text-align: justify;
+}
+
+.skills-list{
+  width: 60%;
+}
+
+.skills {
+  width: fit-content;
+  display: inline-flex;
+  margin-right: 3%;
+  color: rgb(20, 91, 205);
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgb(20 91 205 / 20%); /* transparency @ 20%*/
+  box-shadow: 5px 5px 3px rgb(57 57 57/40%);
+}
+
+/* work page styling */
+.center-title{
+  justify-content: center; /* title in center (left-right)*/
+}
+.job-card {
+  margin-top: 15px;
+}
+
+.job-role{
+  font-size: 25px;
+  color: rgb(57, 57, 57); ;
+}
+
+.job-details {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(20, 91, 205) ;
+}
+
+.job-desc {
+  width: 80%;
+}
+
+/* contact page styling */
+.contact-content {
+  padding-top: 10%
+}
+
+.contact-p {
+  font-size: 150%;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-right-col {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: block;
+  width: 150px;
+  margin-bottom: 10%;
+  background-color: rgb(20, 91, 205);
+  outline: 2.5px solid;
+  border-color:  rgb(20, 91, 205); 
+}
+
+.contact-btn:hover{
+  background-color: rgb(250, 250, 250);
+  color:  rgb(20, 91, 205);
+  box-shadow: 5px 5px 3px rgb(57, 57, 57);
+  transition: all 0.3s ease; 
+}
