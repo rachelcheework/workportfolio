@@ -12,7 +12,7 @@ const TopNav = () => {
                         <img src=""/>
                         {' '}
                         &lt;{" "}
-                        Rachel Chee
+                        Rachel Chee WT
                         /&gt; 
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"className="ms-auto" />
