@@ -11,7 +11,7 @@ import Work from './components/work';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/personal_portfolio'>
       <TopNav/> 
       <div className='mt-0'> {/* mt-5 if nav bar is fixed='top' */}
         <Routes>
