@@ -15,7 +15,7 @@ function App() {
       <TopNav/> 
       <div className='mt-0'> {/* mt-5 if nav bar is fixed='top' */}
         <Routes>
-          <Route path="/" exact element={<Home/>}/>
+          <Route path="/personal_portfolio" exact element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           {/* <Route path='/projects' element={<Projects/>}/> */}
           <Route path='/contact' element={<Contact/>}/>
